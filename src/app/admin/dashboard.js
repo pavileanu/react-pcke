@@ -13,11 +13,11 @@ export default function Dashboard() {
             <Button onClick={() => logout(user)}>Log out</Button>
             <h2>User </h2>
             <pre>
-                {JSON.stringify(user)}
+                {JSON.stringify(user, null, 2)}
             </pre>
             <h2>Settings</h2>
             <pre>
-                {JSON.stringify(Settings)}
+                {JSON.stringify(Settings, null, 2)}
             </pre>
         </React.Fragment>
 }

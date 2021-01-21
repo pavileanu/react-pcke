@@ -18,6 +18,7 @@ export const handleAuthenticationCallback = () => {
                     'code': q.code,
                     'client_id': AUTH.client_id,
                     'redirect_uri': AUTH.redirect_uri,
+                    'scope': AUTH.requested_scopes,
                     'code_verifier': localStorage.getItem('pkce_code_verifier')
                 }, (request, body) => {
                     if (DEBUG) {
