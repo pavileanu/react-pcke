@@ -1,0 +1,7 @@
+node_modules
+dist
+.vscode
+__snapshots__
+coverage
+test-report.xml
+.DS_Store
